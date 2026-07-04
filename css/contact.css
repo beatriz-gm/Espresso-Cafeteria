@@ -1,0 +1,88 @@
+:root {
+  font-size: 62.5%;
+  --ff-logo: "Comfortaa", sans-serif;
+  --ff-text: "Montserrat", sans-serif;
+
+  --orange: rgb(260, 150, 0);
+  --white: white;
+  --backgroundCard: rgba(0, 0, 0, 0.364);
+  --backgroundNavbar: rgba(15, 15, 15, 0.70);
+}
+
+.contact{
+  max-width:700px;
+  margin:4rem auto;
+  padding:2rem;
+  background:rgba(0,0,0,.55);
+  border-radius:20px;
+}
+
+.contact h1{
+  text-align:center;
+  color: var(--white);
+  font-size:2rem;
+  font-family: var(--ff-logo);
+  margin-bottom:1rem;
+}
+
+.contact p{
+  text-align:center;
+  color: var(--white);
+  font-family: var(--ff-text);
+  font-size:1.5rem;
+  margin-bottom:2rem;
+}
+
+.inputGroup{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  margin-bottom:2rem;
+}
+
+label{
+  color: var(--orange);
+  font-family: var(--ff-logo);
+  font-size:1.5rem;
+}
+
+input, textarea{
+  padding:1rem;
+  border-radius:10px;
+  border:none;
+  font-family: var(--ff-text);
+  font-size:1.5rem;
+  background-color: var(--backgroundNavbar);
+  color: var(--white);
+}
+
+textarea{
+  resize:none;
+  height:150px;
+}
+
+.button{
+  background:transparent;
+  color: var(--orange);
+  font-family: var(--ff-logo);
+  font-size:1.5rem;
+  padding:.5rem 1rem;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+}
+
+.button:hover{
+  background:var(--orange);
+  color: var(--white);
+  transition:.3s ease-in-out;
+}
+
+#formMessage{
+    margin-top:1rem;
+    text-align:center;
+    font-family:var(--ff-text);
+    color:rgb(255,180,70);
+    font-weight:600;
+    font-size:1.25rem;
+}

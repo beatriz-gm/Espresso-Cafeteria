@@ -6,30 +6,31 @@
   <meta name="description" content="Cardápio online - espresso">
   <meta name="author" content="Beatriz Medina">
   <title>Espresso Cafeteria</title>
-
+  <!-- importação de dois arquivos .css pois um estão as estilizações principais/gpadrão e o outro contém estilizações do main da página em questão -->
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
+   <!-- Estrutura do cardápio padrão em todas as páginas - header, main e footer, sendo a barra de navegação e o footer iguais e alterando apenas o main.  -->
   <header>
-    <nav>
-      <a class="logo" href="index.html">espresso</a>
-      <div class="links">
-          <a href="menu.html">Cardápio</a>
-          <a href="about.html">Sobre Nós</a>
-          <a href="contact.html">Contato</a>
-      </div>
+    <nav class="navbar">
+      <a class="logo" href="/index.html">espresso</a>
+      <ul class="nav-links">
+        <li><a href="/pages/menu.html">Cardápio</a></li>
+        <li><a href="/pages/about.html">Sobre Nós</a></li>
+        <li><a href="/pages/contact.html">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <img src="assets/background/b1.jpg" alt="Cafeteria Espresso">
       <div class="heroContent">
-        <h1>Seu café favorito a qualquer momento.</h1>
-        <p>Cafés especiais, sobremesas artesanais e um ambiente acolhedor.</p>
-        <a href="menu.html" class="button">
+        <h1>Seu café favorito a qualquer momento</h1>
+        <p>Cafés especiais, sobremesas artesanais e um ambiente acolhedor ❤</p>
+        <a href="/pages/menu.html" class="button">
             Ver Cardápio
         </a>
       </div>
@@ -39,9 +40,9 @@
       <div class="featuredContainer"> </div>
     </section>
   </main>
-
-  <footer>
-
+  <script type="module" src="../js/index.js"></script>
+  <footer class="footer">
+    <p>2026 - Espresso Cafeteria. Desenvolvido por Beatriz Medina.</p>
   </footer>
 </body>
 </html>

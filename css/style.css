@@ -1,0 +1,150 @@
+/* Arquivo de estilo principal do projeto, contém estilização de background, barra de navegação e footer de todas as páginas.  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-logo: "Comfortaa", sans-serif;
+  --ff-text: "Montserrat", sans-serif;
+
+  --orange: rgb(260, 150, 0);
+  --white: white;
+  --backgroundCard: rgba(0, 0, 0, 0.364);
+  --backgroundNavbar: rgba(15, 15, 15, 0.70);
+}
+
+body{
+  background: linear-gradient(rgba(0, 0, 0, 0.364),rgba(0, 0, 0, 0.447)), url("../assets/background/b1.jpg");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  min-height:100vh;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:2.5rem 8%;
+  background: var(--backgroundNavbar);
+}
+
+.logo{
+  font-family:var(--ff-logo);
+  font-size:2.5rem;
+  color:var(--orange);
+  text-decoration:none;
+}
+
+.nav-links{
+  display:flex;
+  gap:2rem;
+  list-style:none;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:var(--white);
+  font-family:var(--ff-text);
+  font-size:2rem;
+  transition:0.3s ease-in-out;
+}
+
+.nav-links a:hover{
+  color:var(--orange);
+}
+
+.footer{
+  background: var(--backgroundNavbar);
+  padding:2.5rem;
+  margin:4rem auto;
+}
+
+.footer p{
+  text-align:center;
+  color:var(--white);
+  font-family:var(--ff-text);
+  font-size:1.25rem;
+}
+
+.card{
+  display:flex;
+  gap:1.5rem;
+  background:var(--backgroundCard);
+  border-radius:20px;
+  padding:1.5rem;
+  backdrop-filter:blur(5px);
+  transition:.3s ease-in-out;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width: 10rem;
+  height:11rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.card .item {
+  max-width: 25rem;
+}
+
+.card .itemH {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .itemH h2{
+  color: var(--white);
+  font-family: var(--ff-logo);
+  font-size: 1.6rem;
+  letter-spacing: .30rem;
+}
+
+.card .itemH h3{
+  color:var(--orange);
+  font-family: var(--ff-logo);
+  font-size: 1.5rem;
+}
+
+.card .item p{
+  color: var(--white);
+  font-family: var(--ff-text);
+  font-size: 1.25rem;
+  margin-top: .5rem;
+}
+
+.card span{
+  color:var(--orange);
+  font-weight:bold;
+}
+
+.nav-links a.active{
+  color: var(--orange);
+  font-weight:600;
+}
+
+@media (max-width: 768px) {
+  .navbar .logo {
+    font-size: 2rem;   
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+}

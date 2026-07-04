@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardápio online - espresso">
+  <meta name="author" content="Beatriz Medina">
+  <title>Espresso Cafeteria - Contato</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="/index.html">espresso</a>
+      <ul class="nav-links">
+        <li><a href="/pages/menu.html">Cardápio</a></li>
+        <li><a href="/pages/about.html">Sobre Nós</a></li>
+        <li><a href="/pages/contact.html" class="nav active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h1>Fale Conosco</h1>
+      <p>
+        Tem alguma sugestão ou encontrou algum problema?
+        Envie uma mensagem para nós.
+      </p>
+      <form id="contactForm">
+        <div class="inputGroup">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Digite seu nome">
+        </div>
+        <div class="inputGroup">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail">
+        </div>
+        <div class="inputGroup">
+          <label for="message">Mensagem</label>
+          <textarea
+            id="message"
+            rows="6"
+            placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <button class="button" type="submit">
+          Enviar
+        </button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="../js/contact.js"></script>
+
+  <footer class="footer">
+    <p>2026 - Espresso Cafeteria. Desenvolvido por Beatriz Medina.</p>
+  </footer>
+</body>
+</html>

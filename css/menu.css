@@ -1,0 +1,82 @@
+:root {
+  font-size: 62.5%;
+  --ff-logo: "Comfortaa", sans-serif;
+  --ff-text: "Montserrat", sans-serif;
+
+  --orange: rgb(260, 150, 0);
+  --white: white;
+}
+
+.menu {
+  padding:2rem 2rem;
+}
+
+.menu h1{
+  color:var(--white);
+  font-family:var(--ff-logo);
+  font-size:1.8rem;
+  text-align:center;
+  margin-bottom:2rem;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  gap:3rem;
+  margin-bottom:2rem;
+}
+
+.btnContainer button {
+  background:transparent;
+  color: var(--white);
+  font-family: var(--ff-logo);
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor:pointer;
+}
+
+.btnContainer button:hover {
+  color: var(--orange);
+  transition: .3s ease-in-out;
+}
+
+.menuContainer{
+  display:grid;
+  gap:2rem;
+  margin-top:2rem;
+}
+
+.backToTop{
+  position:fixed;
+  bottom:2rem;
+  right:2rem;
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius:50%;
+  background:var(--orange);
+  color:white;
+  cursor:pointer;
+  display:none;
+  font-size:2.3rem;
+}
+
+.filterBtn.active{
+  color: var(--orange);
+   transform:scale(1.08);
+}
+
+@media(min-width:768px){
+  .menuContainer{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(min-width:1200px){
+  .menuContainer{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
