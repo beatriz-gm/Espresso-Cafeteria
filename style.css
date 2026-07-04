@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62,5%;
+  --ff-logo: "Comfortaa", sans-serif;
+  --ff-text: "Montserrat", sans-serif;
+
+  --orange: rgb(260, 150, 0);
+  --white: white;
+  --black:#181818;
+}
+
+img{
+  display:block;
+  width:100%;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1.5rem 8%;
+}
+
+.links{
+  display:flex;
+  gap:2rem;
+}
