@@ -141,6 +141,10 @@ body{
   .navbar .logo {
     font-size: 2rem;   
   }
+  .navbar{
+    flex-direction: column;
+    gap: 1rem;
+  }
   .nav-links {
     gap: 1rem;
   }
