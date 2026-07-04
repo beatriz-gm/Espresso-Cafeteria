@@ -1,0 +1,19 @@
+{
+  "name": "espresso-cafeteria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatriz-gm/Espresso-Cafeteria.git"
+  },
+  "author": "Beatriz Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beatriz-gm/Espresso-Cafeteria/issues"
+  },
+  "homepage": "https://github.com/beatriz-gm/Espresso-Cafeteria#readme",
+  "description": ""
+}
