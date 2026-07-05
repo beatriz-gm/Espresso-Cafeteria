@@ -1,3 +1,4 @@
+/* configuração padrão para a aplicação, definição da fonte e cores */
 :root {
   font-size: 62.5%;
   --ff-logo: "Comfortaa", sans-serif;
@@ -82,6 +83,7 @@
   transition:.3s ease-in-out;
 }
 
+/* em telas maiores o número de colunas de itens aumenta */
 @media(min-width:900px){
   .featuredContainer{
     grid-template-columns:repeat(3,1fr);
