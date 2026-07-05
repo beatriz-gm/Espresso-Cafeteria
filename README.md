@@ -28,7 +28,7 @@ O projeto simula o site de uma cafeteria fictícia, apresentando um cardápio in
 
 ## 📸 Preview
 
-![alt text](src/assets/readme/desktop.png "layout")
+![alt text](assets/readme/desktop.png "layout")
 
 ---
 
