@@ -21,7 +21,7 @@
 }
 
 body{
-  background: linear-gradient(rgba(0, 0, 0, 0.364),rgba(0, 0, 0, 0.447)), url("../assets/background/b1.jpg");
+  background: url("../assets/background/b1.jpg");
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
@@ -65,7 +65,7 @@ body{
 .footer{
   background: var(--backgroundNavbar);
   padding:2.5rem;
-  margin:4rem auto;
+  margin:10rem auto;
 }
 
 .footer p{
